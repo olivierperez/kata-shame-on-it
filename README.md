@@ -7,7 +7,7 @@ Des bisous !
 
 C'est en forgeant qu'on devient forgeron... oui mais ça ne suffit pas, il faut aussi savoir
 apprendre des forgerons d'expérience qui ont beaucoup à nous transmettre. Il faut également regarder
-à ce que nos paires rates de façon à ne pas reproduire les mêmes erreurs.
+ce que nos paires ratent de façon à ne pas reproduire les mêmes erreurs.
 
 **Nous allons regarder du code d'un autre développeur et essayer d'en tirer des enseignements.**
 
@@ -15,7 +15,7 @@ Gardez à l'esprit que le développeur n'a, sûrement, pas fait exprès de faire
 produit du code à un moment donné, dans des circonstances précises, avec l'expérience qui était la
 sienne à ce moment-là. Il fera, sûrement, mieux la prochaine fois.
 
-Bref, on peut insulter le code tout en restant de le respect de celui qui l'a écrit (coeurs sur lui). 
+Bref, on peut insulter le code tout en restant dans le respect de celui qui l'a écrit (coeurs sur lui). 
 
 ## Organisation d'une session
 
@@ -40,12 +40,12 @@ une meilleure que le snippet d'origine.
 
 ### Mise en commun (5 minutes par snippets)
 
-Après quelques minutes le groupe doit présenter le résultat de son travail à tous les participants.
+Après quelques minutes, le groupe doit présenter le résultat de son travail à tous les participants.
 Le compte-rendu doit contenir :
 - l'analyse de ce qui cloche;
 - les alternatives proposées.
 
-Après restitution de chaque snippets, on peut prendre quelques minutes pour débattre des solutions
+Après restitution de chaque snippet, on peut prendre quelques minutes pour débattre des solutions
 proposées.
 
 ## Aide pour les plus débutants
@@ -53,8 +53,8 @@ proposées.
 Pour détecter un code qui mériterait d'être retravaillé il y a quelques questions qui peuvent
 orienter la recherche :
 - Est-ce qu'il y a du code dupliqué ? Ou une structure de code dupliquée ?
-- Est-ce qu'il y a un bout de code qui nécessite de relu plusieurs fois pour être compris ?
-- Est-ce que j'aimerai toucher à un bout de code me semble risqué ?
+- Est-ce qu'il y a un bout de code qui nécessite d'être relu plusieurs fois pour être compris ?
+- Est-ce que quand j'aimerais toucher à un bout de code, ça me semble risqué ?
 - Est-ce qu'un bout de code me chagrine ?
 
 Il ne s'agit pas là d'une liste exaustive, il y a bien d'autres questions à se poser. Toutefois
