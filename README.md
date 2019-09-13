@@ -53,8 +53,8 @@ proposées.
 Pour détecter un code qui mériterait d'être retravaillé il y a quelques questions qui peuvent
 orienter la recherche :
 - Est-ce qu'il y a du code dupliqué ? Ou une structure de code dupliquée ?
-- Est-ce qu'il y a un bout de code qui nécessite de relu plusieurs fois pour être compris ?
-- Est-ce que j'aimerai toucher à un bout de code me semble risqué ?
+- Est-ce qu'il y a un bout de code qui nécessite d'être relu plusieurs fois pour être compris ?
+- Est-ce que toucher à un bout de code me semble risqué ?
 - Est-ce qu'un bout de code me chagrine ?
 
 Il ne s'agit pas là d'une liste exaustive, il y a bien d'autres questions à se poser. Toutefois
