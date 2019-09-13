@@ -11,9 +11,9 @@ apprendre des forgerons d'expérience qui ont beaucoup à nous transmettre. Il f
 
 **Nous allons regarder du code d'un autre développeur et essayer d'en tirer des enseignements.**
 
-Gardez à l'esprit que le développeur n'a, sûrement, pas fait exprès de faire de la merde. Il a
-produit du code à un moment donné, dans des circonstances précises, avec l'expérience qui était la
-sienne à ce moment-là. Il fera, sûrement, mieux la prochaine fois.
+Gardez à l'esprit que le développeur n'a (sûrement) pas fait exprès d'écrire du code sous forme
+d'énigmes. Il a produit du code à un moment donné, dans des circonstances précises, avec
+l'expérience qui était la sienne à ce moment-là. Il fera, sûrement, mieux la prochaine fois.
 
 Bref, on peut insulter le code tout en restant de le respect de celui qui l'a écrit (coeurs sur lui). 
 
@@ -24,7 +24,7 @@ Bref, on peut insulter le code tout en restant de le respect de celui qui l'a é
 Former des groupes de 2 ou 3 développeurs.
 
 L'organisateur distribue à chaque groupe de participants un (ou plusieurs) bout(s) de code à
-analyser ([snippets kotlin](/kotlin/snippets/)). L'idée est que chaque groupe ait des snippets
+analyser ([snippets](/kotlin/snippets/)). L'idée est que chaque groupe ait des snippets
 différents.
 
 Idée : _Imprimer les snippets sur des feuilles A5 voire A6._
