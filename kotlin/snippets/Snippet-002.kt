@@ -5,6 +5,9 @@ data class Product(
     val price: Float
 )
 
+/**
+ * Get the products that are about food.
+ */
 fun get(list: List<Product>): Int {
     val ret = mutableListOf<Product>()
     for (x in list) {
