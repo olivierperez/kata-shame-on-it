@@ -48,12 +48,12 @@ une meilleure que le snippet d'origine.
 
 ### :mega: Mise en commun (5 minutes par snippets)
 
-Après quelques minutes le groupe doit présenter le résultat de son travail à tous les participants.
+Après quelques minutes, le groupe doit présenter le résultat de son travail à tous les participants.
 Le compte-rendu doit contenir :
 - l'analyse de ce qui cloche;
 - les alternatives proposées.
 
-Après restitution de chaque snippets, on peut prendre quelques minutes pour débattre des solutions
+Après restitution de chaque snippet, on peut prendre quelques minutes pour débattre des solutions
 proposées.
 
 ## :memo: Aide pour les plus débutants
@@ -62,7 +62,7 @@ Pour détecter un code qui mériterait d'être retravaillé il y a quelques ques
 orienter la recherche :
 - Est-ce qu'il y a du code dupliqué ? Ou une structure de code dupliquée ?
 - Est-ce qu'il y a un bout de code qui nécessite d'être relu plusieurs fois pour être compris ?
-- Est-ce que toucher à un bout de code me semble risqué ?
+- Est-ce que quand j'aimerais toucher à un bout de code, ça me semble risqué ?
 - Est-ce qu'un bout de code me chagrine ?
 
 Il ne s'agit pas là d'une liste exaustive, il y a bien d'autres questions à se poser. Toutefois
