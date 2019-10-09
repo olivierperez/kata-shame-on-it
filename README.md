@@ -65,5 +65,5 @@ orienter la recherche :
 - Est-ce que toucher à un bout de code me semble risqué ?
 - Est-ce qu'un bout de code me chagrine ?
 
-Il ne s'agit pas là d'une liste exaustive, il y a bien d'autres questions à se poser. Toutefois
+Il ne s'agit pas là d'une liste exhaustive, il y a bien d'autres questions à se poser. Toutefois
 je pense qu'elles vous aideront à débusquer les premiers pièges.
