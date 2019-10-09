@@ -88,7 +88,7 @@ we will see a summary of what you can meet in any project.
 
 The general idea is to leave with lots of good ideas to put in place tomorrow.
 
-** We will look at another developer's code and try to learn from it. **
+**We will look at another developer's code and try to learn from it.**
 
 Keep in mind that the developer has (probably) not done on purpose to write form code
 puzzles. He produced code at some point, under specific circumstances, with
@@ -96,9 +96,9 @@ the experience that was hers at that time. He'll do better next time, that's for
 
 In short, we can strongly criticize a code while remaining in the respect of the one who wrote (hearts on him).
 
-##: information_source: Organization of a session
+## :information_source: Organization of a session
 
-###: books: Set up (10 minutes)
+### :books: Set up (10 minutes)
 
 Form groups of 2 or 3 developers.
 
@@ -108,7 +108,7 @@ different.
 
 Idea: _Print the snippets on sheets A5 or A6._
 
-###: mag_right: Running the kata (10-15 minutes by snippets)
+### :mag_right: Running the kata (10-15 minutes by snippets)
 
 Once the snippets are distributed, each group can begin their analysis. The analysis must be
 on the "cleanliness" of the code. The concept of cleanliness is rather relative to everyone, so we have to
@@ -117,7 +117,7 @@ agree between participants in the same group on things that are wrong.
 Once the dirt has been identified, it is necessary to propose 1, 2 or 3 different alternatives of which at least
 better than the original snippet.
 
-###: mega: Pooling (5 minutes by snippets)
+### :mega: Pooling (5 minutes by snippets)
 
 After a few minutes the group must present the result of their work to all participants.
 The report must contain:
@@ -127,7 +127,7 @@ The report must contain:
 After restitution of each snippets, we can take a few minutes to discuss solutions
 proposed.
 
-##: memo: Help for the most beginners
+## :memo: Help for the most beginners
 
 To detect a code that deserves to be reworked there are some questions that can
 guide research:
