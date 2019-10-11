@@ -33,7 +33,7 @@ In short, we can criticize a code while not hurting the feeling of writer.
 Form groups of 2 or 3 developers.
 
 The organizer will distributes code to each participanting group may be one or more to
-analyze ([snippets](/kotlin/snippets/)). The idea is that each group has snippet
+analyze ([snippets](/snippets/)). The idea is that each group has snippet
 different.
 
 Idea: _Print the snippet on sheets A5 or A6._
