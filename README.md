@@ -69,3 +69,7 @@ orienter la recherche :
 
 Il ne s'agit pas là d'une liste exhaustive, il y a bien d'autres questions à se poser. Toutefois
 je pense qu'elles vous aideront à débusquer les premiers pièges.
+
+## Other languages
+
+- [English](/langs/en/README.md)
