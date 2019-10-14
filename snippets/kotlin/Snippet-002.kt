@@ -1,5 +1,3 @@
-package fr.o80.kata
-
 data class Product(
     val type: Int,
     val price: Float

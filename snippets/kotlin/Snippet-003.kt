@@ -1,5 +1,3 @@
-package fr.o80.kata
-
 import java.io.PrintWriter
 
 fun main() {

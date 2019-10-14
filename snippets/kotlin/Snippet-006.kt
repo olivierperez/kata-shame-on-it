@@ -1,9 +1,7 @@
-package fr.o80.kata
-
 class Person(
-        private var fullname: String,
-        private var age: Int?,
-        private var size: Int?
+    private var fullname: String,
+    private var age: Int?,
+    private var size: Int?
 ) {
     /**
      * Secondary constructor with firstname and lastname.
@@ -31,7 +29,7 @@ class Person(
         size = _size
     }
 
-    constructor(fullname: String, size: Int) : this(firstname + " " + lastname, null, size)
+    constructor(fullname: String, size: Int?) : this(fullname, null, size)
 }
 
 fun completeIdentity(person: Person, age: Int): Person {

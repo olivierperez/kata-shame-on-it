@@ -1,10 +1,12 @@
-package fr.o80.kata
+// Some help in "lib/Lib-005.kt"
+
+private val DANGEROUS_ACTION = 1
 
 /**
  * Execute the action when the user is connected.
  */
 fun executeActionIfStateIsNotForbidden(action: Int) {
-    if(action == ...){
+    if(action == DANGEROUS_ACTION){
         val isConnected = getUserState()
         getContactMails(isConnected)
     } else {
@@ -19,7 +21,7 @@ fun getContactMails(connected: Boolean) {
     if(connected == true){
         writeMailToContact(getContacts())
     } else {
-        println(message)
+        println("Not connected")
     }
 }
 
@@ -28,10 +30,10 @@ fun getContactMails(connected: Boolean) {
  */
 fun writeMailToContact(arg: List<Contact>) {
     if(arg.isNotEmpty()){
-        for (contact: arg) {
+        for (contact in arg) {
             smtp(contact.courriel, "Some important information to send!")
         }
     } else {
-        println(message)
+        println("arg is empty")
     }
 }
