@@ -16,11 +16,11 @@ chance de grandir dans une famille assez grande pour laisser mes frères et soeu
 erreurs, et pour en tirer l'enseignement nécessaire afin ne pas les copier.
 
 J'aime me dire que c'est aussi une des façons de progresser dans l'art du développement. Au lieu de
-sauter à la gorger de mes collègues adorés à la première bourde, je préfère me nourrir de leurs
+sauter à la gorge de mes collègues adorés à la première bourde, je préfère me nourrir de leurs
 erreurs. Dans ce Kata nous verrons un condensé de ce que vous pouvez rencontrer dans n'importe quel
 projet.
 
-L'idée général est de repartir avec plein de bonnes idées à mettre en place dès demain.
+L'idée générale est de repartir avec plein de bonnes idées à mettre en place dès demain.
 
 **Nous allons regarder du code d'un autre développeur et essayer d'en tirer des enseignements.**
 
