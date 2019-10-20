@@ -10,8 +10,8 @@ class Snippet_005 {
      * Execute the action when the user is connected.
      */
     public void executeActionIfStateIsNotForbidden(Integer action) {
-        if (action == DANGEROUS_ACTION) {
-            Boolean isConnected = Lib.getUserState();
+        if (action.equals(DANGEROUS_ACTION)) {
+            Boolean isConnected = getUserState();
             getContactMails(isConnected);
         } else {
             System.out.println("Action is not allowed");
@@ -22,8 +22,8 @@ class Snippet_005 {
      * Get the list of the contact of the user.
      */
     public void getContactMails(Boolean connected) {
-        if (connected == true) {
-            writeMailToContact(Lib.getContacts());
+        if (connected.equals(true)) {
+            writeMailToContact(getContacts());
         } else {
             System.out.println("Not connected");
         }
@@ -32,18 +32,16 @@ class Snippet_005 {
     /**
      * Write an email to the friends.
      */
-    public void writeMailToContact(List<Lib.Contact> arg) {
+    public void writeMailToContact(List<Contact> arg) {
         if (!arg.isEmpty()) {
-            for (Lib.Contact contact : arg) {
-                Lib.smtp(contact.courriel, "Some important information to send!");
+            for (Contact contact : arg) {
+                smtp(contact.courriel, "Some important information to send!");
             }
         } else {
             System.out.println("arg is empty");
         }
     }
-}
 
-class Lib {
     static class Contact {
         public String courriel;
 
@@ -53,20 +51,17 @@ class Lib {
 
     }
 
-    public static Boolean getUserState() {
+    private static Boolean getUserState() {
         //TODO("Not important for exercise")
         return false;
     }
 
-    public static List<Contact> getContacts() {
+    private static List<Contact> getContacts() {
         //TODO("Not important for exercise")
         return emptyList();
     }
 
-    public static void smtp(String adress, String message) {
+    private static void smtp(String adress, String message) {
         //TODO("Not important for exercise")
     }
 }
-
-
-

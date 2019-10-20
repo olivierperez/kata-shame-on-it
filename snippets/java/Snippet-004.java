@@ -1,7 +1,7 @@
 import java.util.List;
 
 class View {
-    private Screen parentView;
+    private final Screen parentView;
     private IconBlock iconsBlock;
 
     public View(Screen parentView) {
@@ -32,7 +32,6 @@ class View {
             });
         }
     }
-
 }
 
 interface Screen {
@@ -46,7 +45,6 @@ class AccountsScreen implements Screen {
 
 class IconBlock {
     void setNotification(String title, Integer index) {
-        // TODO("Not important for exercise")
     }
 }
 
