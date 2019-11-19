@@ -1,18 +1,11 @@
 data class Product(
-    val type: Int,
-    val price: Float
+	val type: Int,
+	val price: Float
 )
 
-/**
- * Get the products that are about food.
- */
-fun get(list: List<Product>): Int {
-    val ret = mutableListOf<Product>()
-    for (x in list) {
-        if (x.type != 19) {
-            continue
-        }
-        ret.add(x)
-    }
-    return ret.size
-}
+const val notFoodType = 19
+fun numberOfFoodProducts(products: List<Product>): Int =
+	products.filter { it.type != notFoodType }.count()
+
+// nommage de x et list, ret, methode get retourne une taille
+// liste mutable
