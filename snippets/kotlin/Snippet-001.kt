@@ -1,21 +1,10 @@
-data class Product(val type: Type)
-
-enum class Type {
-    BREAD, CANDY
+sealed class Product(val unitPrice: Float, val minQuantityForDiscount: Int, val discountRate: Float){
+	fun discount(quantity: Int): Float = if (quantity >= minQuantityForDiscount) discountRate else 0f
 }
+object Bread : Product(unitPrice = 3f, minQuantityForDiscount = 10, discountRate = 0.1f)
+object Candy : Product(unitPrice = 0.49f,minQuantityForDiscount = 100, discountRate = 0.12f)
 
 class PriceCalculator {
-    fun price(product: Product): Float {
-        return when (product.type) {
-            Type.BREAD -> 3f
-            Type.CANDY -> 0.49f
-        }
-    }
-
-    fun discount(product: Product, count: Int): Float {
-        return when (product.type) {
-            Type.BREAD -> if (count >= 10) 0.1f else 0f
-            Type.CANDY -> if (count >= 100) 0.12f else 0f
-        }
-    }
+	fun price(product: Product): Float = product.unitPrice
+	fun discount(product: Product, count: Int): Float = product.discount(count)
 }
