@@ -47,3 +47,4 @@ je pense qu'elles vous aideront à débusquer les premiers pièges.
 
 Quelques idées pour animer ce kata :
 - [01](/langs/fr/ORGANIZER_01.md)
+- [02](/langs/fr/ORGANIZER_02.md) (format recommandé)
