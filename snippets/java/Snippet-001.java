@@ -1,59 +1,72 @@
 import java.util.Objects;
 
 class PriceCalculator {
-    public Float price(Product product) {
-        float price = 0f;
-        switch (product.type) {
-            case BREAD:
-                price = 3f;
-                break;
-            case CANDY:
-                price = 0.49f;
-                break;
+
+    public class Bread implements Product {
+
+        public static final float DISCOUNT_PERCENT = 0.1f;
+        public static final int DISCOUNT_THRESHOLD = 10;
+        public static final int NO_DISCOUNT = 0;
+
+        public Float price() {
+            return 3f;
         }
-        return price;
-    }
 
-    public Float discount(Product product, Integer count) {
-        float discount = 0f;
-        switch (product.type) {
-            case BREAD:
-                discount = count >= 10 ? 0.1f : 0;
-                break;
-            case CANDY:
-                discount = count >= 100 ? 0.12f : 0;
-                break;
-        }
-        return discount;
-    }
-
-    public static class Product {
-        private Type type;
-
-        public Product(Type type) {
-            this.type = type;
+        public Float discount(Integer productQuantity) {
+            return productQuantity >= DISCOUNT_THRESHOLD ? DISCOUNT_PERCENT : NO_DISCOUNT;
         }
 
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Product product = (Product) o;
-            return type == product.type;
+            return o != null && getClass() == o.getClass();
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(type);
+            return Objects.hash(this);
         }
 
         @Override
         public String toString() {
-            return "Product{" + "type=" + type + '}';
+            return "Product{type=BREAD}";
         }
     }
 
-    public enum Type {
-        BREAD, CANDY
+    public class Candy implements Product {
+
+        public static final int DISCOUNT_THRESHOLD = 100;
+        public static final float DISCOUNT_PERCENT = 0.12f;
+        public static final int NO_DISCOUNT = 0;
+
+        public Float price() {
+            return 0.49f;
+        }
+
+        public Float discount(Integer productQuantity) {
+            return productQuantity >= DISCOUNT_THRESHOLD ? DISCOUNT_PERCENT : NO_DISCOUNT;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            return o != null && getClass() == o.getClass();
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(this);
+        }
+
+        @Override
+        public String toString() {
+            return "Product{type=CANDY}";
+        }
+    }
+
+    public interface Product {
+        Float price();
+
+        Float discount(Integer count);
     }
 }

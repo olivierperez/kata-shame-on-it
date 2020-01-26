@@ -1,37 +1,42 @@
-import java.util.ArrayList;
+import java.math.BigDecimal;
 import java.util.List;
 
 class Product {
-    private Integer type;
-    private Float price;
+    private ProductType type;
+    private BigDecimal price;
 
-    public Product(Integer type, Float price) {
+    public Product(ProductType type, BigDecimal price) {
         this.type = type;
         this.price = price;
     }
 
-    public Integer getType() {
-        return type;
-    }
+    public int getType() { return type.id; }
 
-    public Float getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    /**
-     * Get the products that are about food.
-     */
-    public static Integer get(List<Product> list) {
-        List<Product> ret = new ArrayList<>();
+    public boolean isFood() {
+        return type == ProductType.Food;
+    }
+}
 
-        for (Product x : list) {
+class Products {
+    public static long countFoodProducts(List<Product> products) {
+        return products.stream()
+                .filter(Product::isFood)
+                .count();
+    }
+}
 
-            if (x.type != 19) {
-                continue;
-            }
-            ret.add(x);
-        }
+enum ProductType {
+    Other(0),
+    Food(19),
+    ;
 
-        return ret.size();
+    public final int id;
+
+    ProductType(int id) {
+        this.id = id;
     }
 }
