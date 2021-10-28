@@ -1,4 +1,9 @@
-// Some help in "lib/Lib-005.kt"
+package fr.o80.kata.snippet5
+
+import fr.o80.kata.snippet5.lib.Contact
+import fr.o80.kata.snippet5.lib.getContacts
+import fr.o80.kata.snippet5.lib.getUserState
+import fr.o80.kata.snippet5.lib.smtp
 
 private val DANGEROUS_ACTION = 1
 
@@ -6,7 +11,7 @@ private val DANGEROUS_ACTION = 1
  * Execute the action when the user is connected.
  */
 fun executeActionIfStateIsNotForbidden(action: Int) {
-    if(action == DANGEROUS_ACTION){
+    if (action == DANGEROUS_ACTION) {
         val isConnected = getUserState()
         getContactMails(isConnected)
     } else {
@@ -18,7 +23,7 @@ fun executeActionIfStateIsNotForbidden(action: Int) {
  * Get the list of the contact of the user.
  */
 fun getContactMails(connected: Boolean) {
-    if(connected == true){
+    if (connected == true) {
         writeMailToContact(getContacts())
     } else {
         println("Not connected")
@@ -29,7 +34,7 @@ fun getContactMails(connected: Boolean) {
  * Write an email to the friends.
  */
 fun writeMailToContact(arg: List<Contact>) {
-    if(arg.isNotEmpty()){
+    if (arg.isNotEmpty()) {
         for (contact in arg) {
             smtp(contact.courriel, "Some important information to send!")
         }

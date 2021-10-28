@@ -1,3 +1,5 @@
+package fr.o80.kata.snippet3
+
 import java.io.PrintWriter
 
 fun main() {

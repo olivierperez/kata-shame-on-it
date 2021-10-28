@@ -1,4 +1,11 @@
-// Some help in "lib/Lib-004.kt"
+package fr.o80.kata.snippet4
+
+import fr.o80.kata.snippet4.lib.AccountListObject
+import fr.o80.kata.snippet4.lib.Accounts
+import fr.o80.kata.snippet4.lib.AccountsScreen
+import fr.o80.kata.snippet4.lib.IconBlock
+import fr.o80.kata.snippet4.lib.MainScreen
+import fr.o80.kata.snippet4.lib.Screen
 
 class View(
     private val parentView: Screen

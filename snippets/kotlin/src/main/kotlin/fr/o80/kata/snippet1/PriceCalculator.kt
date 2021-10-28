@@ -1,3 +1,5 @@
+package fr.o80.kata.snippet1
+
 data class Product(val type: Type)
 
 enum class Type {

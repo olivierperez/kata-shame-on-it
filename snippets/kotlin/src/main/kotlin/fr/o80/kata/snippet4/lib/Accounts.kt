@@ -1,9 +1,7 @@
-interface Screen
-class MainScreen : Screen
-class AccountsScreen : Screen
+package fr.o80.kata.snippet4.lib
 
 class Accounts {
-    fun getAllAccountsList(calback: Accounts.GetAccountsCalback<AccountListObject>) {
+    fun getAllAccountsList(calback: GetAccountsCalback<AccountListObject>) {
 
     }
 
@@ -19,9 +17,4 @@ class Accounts {
 
 class AccountListObject {
     fun isAlreadyDiscovered(): Boolean = TODO("Not important for exercise")
-}
-
-class IconBlock {
-    fun setNotification(title: String, index: Int) {
-    }
 }
